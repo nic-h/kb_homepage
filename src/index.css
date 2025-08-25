@@ -1,13 +1,61 @@
-/* Reset and base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables */
+:root {
+  --kb-orange: #FF6B35;
+  --kb-text: #1A1A1A;
+  --kb-grey: #666;
+  --kb-light-grey: #999;
+  --kb-bg: #E8E8E8;
+  --kb-divider: #DDD;
+}
+
+/* Reset everything */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Remove all default button and link styles */
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Body styles */
 body {
-  background-color: #E8E8E8;
+  background-color: var(--kb-bg);
   min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--kb-text);
+}
+
+/* Remove focus outlines for mouse users, keep for keyboard */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--kb-orange);
+  outline-offset: 2px;
 }
 
 /* Flexbox utilities */
@@ -51,5 +99,57 @@ body {
 .leading-relaxed { line-height: 1.625; }
 .border-t { border-top: 1px solid; }
 
-/* Hover states */
-.hover\:text-orange-500:hover { color: #FF6B35; }
+/* Container override to ensure no weird padding */
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Hover states - make sure orange is used */
+.hover\:text-orange-500:hover { 
+  color: var(--kb-orange) !important; 
+}
+
+/* CV button specific fix */
+.cv-button {
+  color: var(--kb-text) !important;
+  background: none !important;
+  border: none !important;
+  transition: all 200ms ease;
+  font-weight: 500;
+}
+
+.cv-button:hover {
+  color: var(--kb-orange) !important;
+  transform: scale(1.05);
+}
+
+/* Expandable sections - no borders! */
+.expandable {
+  transition: all 150ms ease;
+  border-radius: 4px;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding: 8px;
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.expandable:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .px-8 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
