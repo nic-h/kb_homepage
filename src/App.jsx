@@ -18,53 +18,41 @@ const Portfolio = () => {
 
   // Data arrays for cleaner code
   const publications = [
-    { 
-      href: 'https://kirstenbevin.com/Building-buffers', 
-      text: 'Building buffers', 
-      tip: 'View full presentation', 
-      meta: "Talk for the DADo Film Society (Sept '24)" 
+    {
+      href: 'https://paragraph.com/@kirstenbevin/density-done-well-longevity-done-well',
+      text: 'Density done well',
+      tip: 'Read on Paragraph',
+      meta: 'Panel talk at the Office of the Victorian Government Architect'
     },
-    { 
-      href: 'https://www.ahuri.edu.au/research/final-reports/390', 
-      text: 'Housing aspirations for precariously housed older Australians', 
-      tip: 'AHURI Final Report No. 390', 
-      meta: 'James, A., Crowe, A., Tually, S., et al. AHURI Final Report No. 390 (2022)' 
+    {
+      href: 'https://paragraph.com/@kirstenbevin/building-buffers',
+      text: 'Building buffers',
+      tip: 'Read on Paragraph',
+      meta: "Talk for the DADo Film Society (Sept '24)"
     },
-    { 
-      href: 'https://www.ahuri.edu.au/research/final-reports/378', 
-      text: 'Alternative housing models for precariously housed older Australians', 
-      tip: 'AHURI Final Report No. 378', 
-      meta: 'Tually, S., Coram, V., Faulkner, D., et al. AHURI Final Report No. 378 (2022)' 
+    {
+      href: 'https://research-repository.rmit.edu.au/articles/thesis/Making_housing_shaping_old_age_industry_engagement_in_older_persons_housing/27595770?file=50762304',
+      text: 'Making housing, shaping old age',
+      tip: 'Full PhD Thesis',
+      meta: 'PhD Thesis, RMIT University (2021)'
     },
-    { 
-      href: 'https://researchrepository.rmit.edu.au/articles/thesis/Making_housing_shaping_old_age_industry_engagement_in_older_persons_housing/27595770?file=50762304', 
-      text: 'Making housing, shaping old age', 
-      tip: 'Full PhD Thesis', 
-      meta: 'PhD Thesis, RMIT University (2021)' 
+    {
+      href: 'https://paragraph.com/@kirstenbevin/making-housing-shaping-old-age',
+      text: 'Summary of PhD thesis',
+      tip: 'Accessible summary',
+      meta: null
     },
-    { 
-      href: 'https://kirstenbevin.com/Making-housing-shaping-old-age', 
-      text: 'Summary of PhD thesis', 
-      tip: 'Accessible summary', 
-      meta: null 
+    {
+      href: 'https://paragraph.com/@kirstenbevin/the-story-of-retirement-housing-in-victoria',
+      text: 'The story of retirement housing in Victoria',
+      tip: 'Read on Paragraph',
+      meta: 'Case study within the thesis'
     },
-    { 
-      href: 'https://doi.org/10.1080/08111146.2017.1369039', 
-      text: 'Shaping the Housing Grey Zone', 
-      tip: 'Urban Policy and Research', 
-      meta: 'Urban Policy and Research, 36(2), 215-229 (2018)' 
-    },
-    { 
-      href: 'https://kirstenbevin.com/The-story-of-retirement-housing-in-Victoria', 
-      text: 'The story of retirement housing in Victoria', 
-      tip: 'Case study excerpt', 
-      meta: 'Case study within the thesis' 
-    },
-    { 
-      href: 'http://architecturemps.com/wp-content/uploads/2016/12/Architecture-MPS-7-Future-Housing_GloablCities_Regional-Problems-2.pdf', 
-      text: 'Diversity and disparity: Retirement housing in age-friendly cities', 
-      tip: 'Book chapter', 
-      meta: 'In Future Housing: Global Cities and Regional Problems, pp. 93-99 (2016)' 
+    {
+      href: 'https://amps-research.com/wp-content/uploads/2021/09/Amps-Proceedings-Series-7.pdf',
+      text: 'Diversity and disparity: Retirement housing in age-friendly cities*',
+      tip: 'Read proceedings PDF',
+      meta: 'In Future Housing: Global Cities and Regional Problems*, pp. 93-99 (2016)'
     }
   ];
 
