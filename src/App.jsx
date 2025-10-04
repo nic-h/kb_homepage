@@ -19,22 +19,40 @@ const Portfolio = () => {
   // Data arrays for cleaner code
   const publications = [
     {
-      href: 'https://paragraph.com/@kirstenbevin/density-done-well-longevity-done-well',
-      text: 'Density done well',
+      href: 'https://paragraph.com/@kirstenbevin/density-longevity',
+      text: 'Density longevity',
       tip: 'Read on Paragraph',
-      meta: 'Panel talk at the Office of the Victorian Government Architect'
+      meta: 'Panel talk at the Office of the Victorian Government Architect (2025)'
     },
     {
       href: 'https://paragraph.com/@kirstenbevin/building-buffers',
       text: 'Building buffers',
       tip: 'Read on Paragraph',
-      meta: "Talk for the DADo Film Society (Sept '24)"
+      meta: 'Talk for the DADo Film Society (2024)'
+    },
+    {
+      href: 'https://www.ahuri.edu.au/research/final-reports/390',
+      text: 'Housing aspirations for precariously housed older Australians',
+      tip: 'Read AHURI report',
+      meta: 'James, A., Crowe, A., Tually, S., et al. AHURI Final Report No. 378 (2022)'
+    },
+    {
+      href: 'https://www.ahuri.edu.au/research/final-reports/378',
+      text: 'Alternative housing models for precariously housed older Australians',
+      tip: 'Read AHURI report',
+      meta: 'Tually, S., Coram, V., Faulkner, D., et al. AHURI Final Report No. 378 (2022)'
     },
     {
       href: 'https://research-repository.rmit.edu.au/articles/thesis/Making_housing_shaping_old_age_industry_engagement_in_older_persons_housing/27595770?file=50762304',
       text: 'Making housing, shaping old age',
       tip: 'Full PhD Thesis',
       meta: 'PhD Thesis, RMIT University (2021)'
+    },
+    {
+      href: 'https://www.tandfonline.com/doi/full/10.1080/08111146.2017.1369039',
+      text: 'Shaping the Housing Grey Zone',
+      tip: 'Read journal article',
+      meta: 'Urban Policy and Research, Volume 36 (2018)'
     },
     {
       href: 'https://paragraph.com/@kirstenbevin/making-housing-shaping-old-age',
@@ -50,9 +68,9 @@ const Portfolio = () => {
     },
     {
       href: 'https://amps-research.com/wp-content/uploads/2021/09/Amps-Proceedings-Series-7.pdf',
-      text: 'Diversity and disparity: Retirement housing in age-friendly cities*',
+      text: 'Diversity and disparity: Retirement housing in age-friendly cities',
       tip: 'Read proceedings PDF',
-      meta: 'In Future Housing: Global Cities and Regional Problems*, pp. 93-99 (2016)'
+      meta: 'Future Housing: Global Cities and Regional Problems AMPS Proceedings, pp. 93-99 (2016)'
     }
   ];
 
